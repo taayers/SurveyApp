@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3">
+
+    <RelativeLayout
+        android:id="@+id/containerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="#F3F3F3">
+
+        <ImageView
+            android:id="@+id/countyMapView"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/mapImage"
+            android:cropToPadding="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <Button
+            android:id="@+id/newAreaEvalBt"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/countyMapView"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#3ab54a"
+            android:text="Select District"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/splash"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

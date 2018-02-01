@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/navigation_back_btn"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:background="#F3F3F3"
+            android:text="Back"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#3399FF"
+            android:onClick="goBack"/>
+
+        <TextView
+            android:id="@+id/activity_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="65dp"
+            android:layout_toRightOf="@+id/navigation_back_btn"
+            android:text="Test"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nav_step1"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="Take Photos"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="Survey Questions"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="Survey Score"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+    <Button 
+        android:id="@+id/take_picture_bt"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="#3ab54a"
+        android:text="Take Photo"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/hint_text"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/photo_placeholder_text"
+            android:textStyle="bold"
+            />
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:visibility="invisible"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:columnWidth="90dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:background="@drawable/images_bg"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+             />
+
+    </RelativeLayout>
+	    
+    <Button 
+        android:id="@+id/continue_bt"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/grid_view"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#3ab54a"
+        android:gravity="center"
+        android:text="Survey Questions >"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/splash"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
